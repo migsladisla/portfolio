@@ -3,42 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link href="./assets/img/Statue.png" rel="icon">
+    <link href="./assets/css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
     <title>Migs Ladisla | Portfolio</title>
 </head>
 <body>
-    <!-- Navbar-->
-    <nav id="navbar" class="topnav">
-        <a href="#logo">Logo</a>
-        <a href="#about">About</a>
-        <a href="#works">Works</a>
-        <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="expand-icon" onclick="expandNavbar()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
+    <header>
+        <nav id="navbar" class="topnav">
+            <a href="#about">< Migs Ladisla ></a>
+            <a href="#about">About</a>
+            <a href="#works">Works</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="expand-icon" onclick="expandNavbar()">
+                <i class="fa fa-bars fa-lg"></i>
+            </a>
+        </nav>
+    </header>
 
-    <main id="main">
-        <!-- About -->
+    <main id="home">
         <section id="about">
-            This is about
+            <div class="my-description">
+                <h1 class="lg-heading">
+                    Hi, I'm<span class="text-secondary"> Migs Ladisla</span>
+                </h1>
+                <h2 class="sm-heading">
+                    Full Stack Developer and Hardcore Gamer 🚀
+                </h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/migsladisla" target="_blank">
+                        <i class="fab fa-facebook fa-3x"></i>
+                    </a>
+                    <a href="https://www.twitter.com/migsladisla" target="_blank">
+                        <i class="fab fa-twitter fa-3x"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/migsladisla" target="_blank">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                    </a>
+                    <a href="https://www.github.com/migsladisla" target="_blank">
+                        <i class="fab fa-github fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="my-image">
+                <img src="./assets/img/Statue.png" alt="MyPhoto.png">
+            </div>
         </section>
-        <!-- Works -->
         <section id="works">
-            This is works
+            Works
         </section>
-        <!-- Contact -->
         <section id="contact">
-            This is contact
+            Contact
         </section>
     </main>
-
-    <!-- Footer-->
-    <footer id="footer">
-        This is footer
-    </footer>
 </body>
 <script src="assets/js/index.js"></script>
+<script src="https://kit.fontawesome.com/7ff0ea941e.js" crossorigin="anonymous"></script>
 </html>

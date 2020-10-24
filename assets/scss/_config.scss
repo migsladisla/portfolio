@@ -1,0 +1,7 @@
+$primaryColor: #131212;
+$secondaryColor: #dbdbdb;
+$blueColor: #61dbfb;
+
+@mixin easeOut {
+    transition: 0.3s ease-in-out;
+}

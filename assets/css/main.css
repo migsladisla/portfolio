@@ -1,0 +1,186 @@
+.sticky {
+  top: 0;
+  position: fixed !important;
+}
+
+.reveal-in {
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+header #navbar {
+  background: #131212;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  padding: 15px;
+  width: 800px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  border: 1px solid #dbdbdb;
+}
+
+header #navbar .expand-icon {
+  display: none;
+}
+
+header #navbar a:hover {
+  color: #61dbfb;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 900px) {
+  header #navbar {
+    width: 90vw;
+  }
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a:first-child {
+    float: left;
+  }
+  #navbar a.expand-icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topnav.responsive {
+    position: absolute;
+  }
+  .topnav.responsive .expand-icon {
+    position: absolute;
+    margin: 15px;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    margin: 0.3rem;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #navbar a {
+    margin: 0 50px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(109.47deg, #61DBFB 18.18%, #3AB2FC 76.86%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  color: #dbdbdb;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  font-size: 3rem;
+}
+
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #dbdbdb;
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: #61dbfb;
+}
+
+.my-description,
+.my-image {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  overflow: hidden;
+}
+
+main #about {
+  padding: 6rem;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(67, 67, 67, 0.73)), to(rgba(0, 0, 0, 0.52))), url("./../img/about-bg.jpg");
+  background-image: linear-gradient(to bottom, rgba(67, 67, 67, 0.73), rgba(0, 0, 0, 0.52)), url("./../img/about-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main #about .social-icons a {
+  padding: 0.3rem;
+}
+
+main #about .social-icons a:hover {
+  color: #61dbfb;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+main #works {
+  height: 100vh;
+}
+
+main #contact {
+  height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */

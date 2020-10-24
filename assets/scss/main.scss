@@ -1,0 +1,80 @@
+@import 'config';
+@import 'navbar';
+@import 'scrollbar';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    color: $secondaryColor;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+
+    &.lg-heading {
+        font-size: 3rem;
+    }
+
+    &.sm-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+a {
+    color: $secondaryColor;
+    text-decoration: none;  
+}
+
+.text-secondary {
+    color: $blueColor;
+}
+
+.my-description,
+.my-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    overflow: hidden;
+}
+
+main {
+    #about {
+        padding: 6rem;
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(67, 67, 67, 0.73), rgba(0, 0, 0, 0.52)), url('./../img/about-bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .social-icons {
+            a {
+                padding: 0.3rem;
+
+                &:hover {
+                    color: $blueColor;
+                    @include easeOut();
+                }
+            }
+        }
+    }
+
+    #works {
+        height: 100vh;
+    }
+    
+    #contact {
+        height: 100vh;
+    }
+}

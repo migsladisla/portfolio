@@ -15,9 +15,7 @@ window.onscroll = function() {
     }
 }
 
-
 function expandNavbar() {
-    console.log(navbar.classList)
     if (navbar.classList.length === 3) {
         navbar.classList.add("responsive");
     } else {
